@@ -43,6 +43,7 @@ The 26th Knesset was sworn in on 10.11.2026. Permanent committees are not formed
 
 ## Getting heard
 
+- Road-safety organisations, the Road Safety Authority and bereaved families: see partners/road-safety.md (who, what we offer, rules for families).
 - Partners that already have an audience and MK data: Shakuf (Parlameter), Knesset Time, Shomrim. Offer them our data for free; one mention from them reaches more people than we can.
 - Journalists who cover the Knesset: the story is "20 years later, do MKs answer?" plus the issue itself.
 - Each MK who answers well is credited by name; that makes answering attractive, not only silence embarrassing.

@@ -15,6 +15,7 @@ Everything here is plain Markdown, generated from official public data or from l
 | `contacts/social-accounts.md` | MKs' social media accounts (from Wikidata) |
 | `scorecard/METHODOLOGY.md` | Exactly how every number is computed, and its limits |
 | `campaigns/` | Email campaigns: every email, subjects, schedule, follow-up rules |
+| `partners/` | Organisations already working on each issue, and rules for working with bereaved families |
 | `issues/` | One file per issue: facts, sources, the concrete asks |
 | `letters/` | Every letter sent, exact text, with date / status / reply date in the front matter |
 | `contacts/` | Generated list of MKs and committees with official emails |
