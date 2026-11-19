@@ -17,7 +17,7 @@ Official Knesset OData service: https://knesset.gov.il/OdataV4/ParliamentInfo/ .
 
 ## Reply-rate rules (fixed before round 1 is sent)
 
-1. A round is a published series of emails (round 1: 12 emails over 6 weeks, `campaigns/road-safety/`). Every email goes to every MK with identical text and the same subject line; only the name changes. Sent individually (one email per MK, no BCC), same day, same named sender, to the official address in the Knesset record.
+1. A round is a published series of emails (round 1: 12 emails over 6 weeks, `campaigns/road-safety/`). Every email goes to every MK with identical text and the same first subject line; only the name changes. Offices that have not answered any email get the same email once more, 4–5 days later, with a second subject line (the same for all of them). Sent individually (one email per MK, no BCC), same day, same named sender, to the official address in the Knesset record.
 2. "Replied" = a reply to any email in the series. Reply time is counted from the first email. The window closes 14 days after the last email. Offices that commit to an action with a date leave the series and are tracked separately ("committed", then "done" with a link).
 3. Counts as a reply: any answer written by a person in the MK's office, including "we passed it on". Does not count: auto-replies, read receipts.
 4. Bounce: resend to the office's alternative address from the Knesset site. No working address → "unreachable", not "no reply".

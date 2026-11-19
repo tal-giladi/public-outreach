@@ -2,7 +2,7 @@
 
 - ROADMAP.md is the dated plan. Launch: Sunday 3.1.2027. Your tasks are marked "Tal".
 
-- Road-safety campaign: 12 emails + 3 follow-ups in campaigns/road-safety/. Pick main or alternate subject per email before sending; fill signature (town, phone).
+- Road-safety campaign: subjects chosen (first send + resend to non-responders), signature filled (טל גלעדי, בני ברק).
 - 3 MK emails in the Knesset data are broken (Eisenkot, Feiglin missing; Kroizer ends ".gov.ik"). Get the right ones from the MK pages before round 1.
 - Scorecard limits: ministers cannot file private bills or questions, so they show 0; vote % is low for ministers and boycotts. Agenda-motion counts look low; verify the KNS_Agenda source before publicizing that column.
 - The repo is public: your name is on the letter, and the scorecard names every MK. Replies go in replies/, which is not pushed.

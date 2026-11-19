@@ -79,6 +79,8 @@ Running in parallel, every week:
 | Thursday (every 2 weeks) | Claude → Tal approves | Numbers to journalists and partners |
 | Any day | Tal | Phone calls to offices that replied with a commitment (a person's voice closes the deal) |
 
+Resends: offices that have not answered any email get each email once more, 4–5 days later (Thursday for Sunday's email, Monday for Wednesday's), with the second subject line.
+
 Stop rule: an office that commits to an action with a date leaves the series and gets personal follow-up around that date.
 
 ## Phase 3 — Close and publish (11.2 – 3.3.2027)
