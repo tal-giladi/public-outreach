@@ -165,44 +165,6 @@
    "our_median_days": null
   },
   {
-   "id": 4395,
-   "name": "אבי דיכטר",
-   "faction": "",
-   "roles": [
-    "שר החקלאות וביטחון המזון"
-   ],
-   "email": "davraham@knesset.gov.il",
-   "prev_member": true,
-   "bills": 0,
-   "queries": 0,
-   "motions": 0,
-   "votes_cast": 4310,
-   "votes_total": 7557,
-   "vote_pct": 57,
-   "our_sent": 0,
-   "our_replied": 0,
-   "our_median_days": null
-  },
-  {
-   "id": 4397,
-   "name": "זאב אלקין",
-   "faction": "",
-   "roles": [
-    "שר נוסף במשרד האוצר"
-   ],
-   "email": "zelkin@knesset.gov.il",
-   "prev_member": true,
-   "bills": 16,
-   "queries": 1,
-   "motions": 0,
-   "votes_cast": 4201,
-   "votes_total": 7557,
-   "vote_pct": 56,
-   "our_sent": 0,
-   "our_replied": 0,
-   "our_median_days": null
-  },
-  {
    "id": 12938,
    "name": "חמד עמאר",
    "faction": "ישראל ביתנו בראשות אביגדור ליברמן",
@@ -863,25 +825,6 @@
    "our_median_days": null
   },
   {
-   "id": 30708,
-   "name": "מאי גולן",
-   "faction": "",
-   "roles": [
-    "השרה לשוויון חברתי וקידום מעמד האישה"
-   ],
-   "email": "mgolan@knesset.gov.il",
-   "prev_member": true,
-   "bills": 10,
-   "queries": 0,
-   "motions": 0,
-   "votes_cast": 3954,
-   "votes_total": 7557,
-   "vote_pct": 52,
-   "our_sent": 0,
-   "our_replied": 0,
-   "our_median_days": null
-  },
-  {
    "id": 30713,
    "name": "מנסור עבאס",
    "faction": "רע\"מ",
@@ -894,44 +837,6 @@
    "votes_cast": 3334,
    "votes_total": 7557,
    "vote_pct": 44,
-   "our_sent": 0,
-   "our_replied": 0,
-   "our_median_days": null
-  },
-  {
-   "id": 30717,
-   "name": "אופיר סופר",
-   "faction": "",
-   "roles": [
-    "שר העלייה והקליטה"
-   ],
-   "email": "osofer@knesset.gov.il",
-   "prev_member": true,
-   "bills": 0,
-   "queries": 0,
-   "motions": 0,
-   "votes_cast": 4063,
-   "votes_total": 7557,
-   "vote_pct": 54,
-   "our_sent": 0,
-   "our_replied": 0,
-   "our_median_days": null
-  },
-  {
-   "id": 30718,
-   "name": "עידית סילמן",
-   "faction": "",
-   "roles": [
-    "השרה להגנת הסביבה"
-   ],
-   "email": "isilman@knesset.gov.il",
-   "prev_member": true,
-   "bills": 0,
-   "queries": 0,
-   "motions": 0,
-   "votes_cast": 210,
-   "votes_total": 7557,
-   "vote_pct": 3,
    "our_sent": 0,
    "our_replied": 0,
    "our_median_days": null

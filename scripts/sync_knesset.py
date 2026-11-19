@@ -55,9 +55,9 @@ def main():
              "| ID | Name | Faction | Roles | Email |", "|---|---|---|---|---|"]
     for pid, poss in sorted(by_person.items(), key=lambda kv: people.get(kv[0], {}).get("LastName", "")):
         p = people.get(pid)
-        if not p:
-            continue
         faction = next((x["FactionName"] for x in poss if x.get("FactionName")), "")
+        if not p or not faction:  # no faction seat = not a sitting MK (e.g. Norwegian-law minister)
+            continue
         roles = sorted({x.get("DutyDesc") or x.get("CommitteeName") or x.get("GovMinistryName") or "" for x in poss} - {""})
         email = (p.get("Email") or "").strip()
         if not EMAIL_RE.match(email):
@@ -74,7 +74,7 @@ def main():
     (ROOT / "contacts" / "knesset-committees.md").write_text("\n".join(cl) + "\n", encoding="utf-8")
 
     missing = sum(1 for l in lines if l.endswith("MISSING |"))
-    print(f"Knesset {kn}: {len(by_person)} people, {missing} without a valid email, {len(committees)} committees")
+    print(f"Knesset {kn}: {len(lines) - 6} MKs, {missing} without a valid email, {len(committees)} committees")
 
 
 if __name__ == "__main__":

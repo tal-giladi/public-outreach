@@ -11,8 +11,20 @@ Official Knesset OData service: https://knesset.gov.il/OdataV4/ParliamentInfo/ .
 - **Agenda motions** — motions for the agenda initiated by the MK (`KNS_Agenda`).
 - **Plenum votes cast** — recorded votes by the MK (`KNS_PlenumVoteResult`) divided by all plenum votes held between the MK's first and last day in the previous Knesset. Limits: ministers and deputy ministers often vote less by role; opposition boycotts and coalition "pairing" agreements lower the number without meaning absence; a few votes are not recorded by name.
 - **New in K26** — the MK was not a member in the previous Knesset; no history yet. The current Knesset was sworn in on 10.11.2026.
-- **Our letters: sent / replied** — only letters in `letters/` with a real send date. A reply = any substantive answer from the MK or their office (an automatic acknowledgement does not count). We wait 30 days before counting a letter as unanswered.
-- **Median reply days** — days from send to first substantive reply.
+- **Who is included** — the 120 sitting MKs (a current faction seat in the Knesset record). Ministers who resigned their seat under the Norwegian law are not MKs and are not in this table.
+- **Our letters: sent / replied** — only letters in `letters/` with a real send date.
+- **Median reply days** — days from send to first reply.
+
+## Reply-rate rules (fixed before round 1 is sent)
+
+1. One identical Hebrew letter per round; only the name changes. Sent individually (one email per MK, no BCC), same day, same named sender, to the official address in the Knesset record.
+2. Window: 30 days. One reminder on day 21 to everyone without a reply.
+3. Counts as a reply: any answer written by a person in the MK's office, including "we passed it on". Does not count: auto-replies, read receipts.
+4. Bounce: resend to the office's alternative address from the Knesset site. No working address → "unreachable", not "no reply".
+5. Before publishing, every MK marked "no reply" gets a final email asking whether we missed an answer. Corrections are public in the git history.
+6. Replies are published as our short summary. Aides' names and personal details are not published.
+7. Tables are alphabetical. No party is singled out.
+8. Comparison with ynet 2007: our letters say they will be published, which may raise the reply rate; this is stated next to any comparison.
 
 ## Ministries table
 

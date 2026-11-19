@@ -17,6 +17,7 @@ Everything here is plain Markdown, generated from official public data or from l
 | `contacts/` | Generated list of MKs and committees with official emails |
 | `log.md` | One line per event |
 | `deadlines.md` | Follow-ups and legal deadlines due |
+| `PLAN.md` | The plan: rules, timing, round 1 checklist |
 | `OPTIONS.md` | The strategy research behind this project |
 
 ## Rebuild the data

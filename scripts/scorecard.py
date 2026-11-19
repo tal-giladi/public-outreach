@@ -109,7 +109,7 @@ def main():
     rows = []
     for i, pid in enumerate(current_ids, 1):
         p = people.get(pid)
-        if not p:
+        if not p or pid not in faction:  # no faction seat = not a sitting MK (e.g. Norwegian-law minister)
             continue
         row = {"id": pid, "name": f"{p['FirstName']} {p['LastName']}", "faction": faction.get(pid, ""),
                "roles": sorted(roles[pid]), "email": (p.get("Email") or "").strip()}
