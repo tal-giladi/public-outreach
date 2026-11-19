@@ -82,7 +82,7 @@ The 26th Knesset was sworn in on 10.11.2026. Permanent committees are not formed
 | Item | What | Cost | Status |
 |---|---|---|---|
 | Website | GitHub Pages, scoreboard as home page: https://tal-giladi.github.io/public-outreach/ | Free | Live |
-| Own domain | Buy a domain, point it at GitHub Pages; hosting and HTTPS stay free. Steps: buy → add a `CNAME` file with the domain to the repo → at the registrar, 4 A records to GitHub's IPs (or a CNAME for `www`) → enable "Enforce HTTPS" in the repo's Pages settings. Hebrew name ideas: `onim.org.il` ("answering"), `mi-ana.org.il` ("who answered"), `ha-im-onim.org.il` — availability not checked | `.org.il` about ₪80–100/year at an Israeli registrar; `.org` about $10–15/year | Tal to choose the name and buy |
+| Own domain | Recommended: bachaim.org.il (brand "מגיעים בחיים"), see branding/NAME_AND_DOMAIN.md | ~₪80–100/year | Tal to choose and buy |
 | Sending mailbox | New address in Tal's name (later on the own domain, e.g. `tal@<domain>`, which looks more serious than Gmail) | Free (Gmail) or ~$6/month (Google Workspace on the domain) | Tal creating it |
 | About page ("מי אני") | Who runs the project: name, title, background in tech and AI, why road safety, how to contact. Linked from the home page and from every email signature | Free | Waiting for Tal's bio details |
 | Email signature | Name, title, one line on the project, link to the site | Free | After the about page |
