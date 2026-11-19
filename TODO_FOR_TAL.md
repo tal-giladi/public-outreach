@@ -1,7 +1,7 @@
 # TODO for Tal
 
 - PLAN.md is the plan. Round 1 waits until permanent committees are formed.
-- Approve the road-safety letter text (letters/_DRAFT-road-safety-mk.md). Nothing is sent until you say so.
+- Road-safety campaign: 12 emails + 3 follow-ups in campaigns/road-safety/. Pick main or alternate subject per email before sending; fill signature (town, phone).
 - Pick the sending mailbox (Gmail connector failed to connect this session; AgentMail inbox is the alternative).
 - 3 MK emails in the Knesset data are broken (Eisenkot, Feiglin missing; Kroizer ends ".gov.ik"). Get the right ones from the MK pages before round 1.
 - Scorecard limits: ministers cannot file private bills or questions, so they show 0; vote % is low for ministers and boycotts. Agenda-motion counts look low; verify the KNS_Agenda source before publicizing that column.

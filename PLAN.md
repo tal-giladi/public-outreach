@@ -32,7 +32,7 @@ The 26th Knesset was sworn in on 10.11.2026. Permanent committees are not formed
 ## Round 1 checklist
 
 1. Fix data: drop the 5 non-MK ministers from the MK list; fix the 3 broken addresses (Eisenkot, Feiglin missing; Kroizer typo).
-2. Tal approves the letter text.
+2. Tal picks subjects (main or alternate) for the 12 emails in campaigns/road-safety/.
 3. Pick the sending mailbox: one dedicated address under Tal's real name (Gmail limit 500/day is enough).
 4. Commit method + final letter (the "pre-registration" commit).
 5. Generate 120 letter files from the approved text; send all on one day; log each send.

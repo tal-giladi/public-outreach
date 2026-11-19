@@ -14,6 +14,7 @@ Everything here is plain Markdown, generated from official public data or from l
 | `scorecard/PUBLIC_INVOLVEMENT.md` | Which public channels (X, YouTube, Telegram, Facebook, blocking reports) we can measure, and how |
 | `contacts/social-accounts.md` | MKs' social media accounts (from Wikidata) |
 | `scorecard/METHODOLOGY.md` | Exactly how every number is computed, and its limits |
+| `campaigns/` | Email campaigns: every email, subjects, schedule, follow-up rules |
 | `issues/` | One file per issue: facts, sources, the concrete asks |
 | `letters/` | Every letter sent, exact text, with date / status / reply date in the front matter |
 | `contacts/` | Generated list of MKs and committees with official emails |
