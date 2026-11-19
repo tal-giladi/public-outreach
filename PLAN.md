@@ -85,7 +85,7 @@ The 26th Knesset was sworn in on 10.11.2026. Permanent committees are not formed
 |---|---|---|---|
 | Website | GitHub Pages, scoreboard as home page: https://tal-giladi.github.io/public-outreach/ | Free | Live |
 | Own domain | Recommended: bachaim.org.il (brand "מגיעים בחיים"), see branding/NAME_AND_DOMAIN.md | ~₪80–100/year | Tal to choose and buy |
-| Sending mailbox | New address in Tal's name (later on the own domain, e.g. `tal@<domain>`, which looks more serious than Gmail) | Free (Gmail) or ~$6/month (Google Workspace on the domain) | Tal creating it |
+| Sending mailbox | magiim.bachaim@gmail.com (created 19.11.2026); later move to the own domain | Free | Created; on the About page |
 | About page ("מי אני") | Who runs the project: name, title, background in tech and AI, why road safety, how to contact. Linked from the home page and from every email signature | Free | Waiting for Tal's bio details |
 | Email signature | Name, title, one line on the project, link to the site | Free | After the about page |
 | Amuta (nonprofit) | So the project is not one person; also unlocks researcher access to Meta/TikTok data | Registration fees | Later |
