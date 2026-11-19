@@ -21,6 +21,7 @@ Everything here is plain Markdown, generated from official public data or from l
 | `contacts/` | Generated list of MKs and committees with official emails |
 | `log.md` | One line per event |
 | `deadlines.md` | Follow-ups and legal deadlines due |
+| `OUTREACH_PLAN.md` | Who we email for each campaign (officials, organisations, citizens), at what scale, and how we stay within the anti-spam law |
 | `PLAN.md` | The plan: rules, timing, round 1 checklist |
 | `OPTIONS.md` | The strategy research behind this project |
 
