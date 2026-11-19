@@ -57,6 +57,25 @@ The 26th Knesset was sworn in on 10.11.2026. Permanent committees are not formed
 | `check_replies.py` | Reads the inbox, matches replies by thread, fills `reply_at`, flags bounces |
 | `scorecard.py` | Rebuilds the tables (exists) |
 
+## Data inventory
+
+| Data | Source | Cost | Status |
+|---|---|---|---|
+| MK list, emails, factions, roles | Knesset OData | Free | Live (`sync_knesset.py`) |
+| Bills, parliamentary questions, agenda motions, plenum votes | Knesset OData | Free | Live on the site (`scorecard.py`) |
+| Ministries' answers to parliamentary questions | Knesset OData | Free | Live on the site |
+| Committee attendance, speaking turns and words, chairing, invited public | Committee protocols (Word files, ~10,855 sessions in K25) | Free | Parser built and tested on one protocol (`protocols.py`); full run not started |
+| Plenum speeches | Plenum protocols | Free | Same parser, not adapted yet |
+| Ministers' meeting diaries | gov.il / foi.gov.il, per ministry | Free (FOI where missing) | Not collected |
+| Ethics Committee decisions | Knesset site | Free | Not collected |
+| Social accounts | Wikidata | Free | 67 of 120 MKs mapped (`contacts/social-accounts.md`) |
+| YouTube comment replies | YouTube Data API | Free | Not built |
+| Telegram posting | Public channels | Free | Not built |
+| X replies to the public | X API | ~$40–180/month | On hold (Tal deciding) |
+| Facebook / Instagram / TikTok | Researcher programmes | Free if approved | Needs an amuta or university partner |
+| Our letters: replies | Our own mailbox | Free | Waiting: new mailbox, letter improvements |
+| Past email-reply tests | ynet 2005, 2007 | — | Documented (`PUBLIC_SOURCES.md`) |
+
 ## Later, if it works
 
 - Register an amuta (nonprofit) so the project is not one person; the course has a template.
