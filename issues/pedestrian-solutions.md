@@ -26,6 +26,19 @@ Do not ask people to behave perfectly; build streets where a mistake is not fata
 | 6 | **30 km/h city default** | 30 km/h on residential streets, 50 only where marked | Helsinki: zero pedestrian deaths in 2019, then 12 months with no road deaths at all (2024–25), after most streets went to 30 plus a long-term Vision Zero plan ([City of Helsinki](https://www.hel.fi/en/news/no-pedestrian-fatalities-in-helsinki-traffic-last-year), [EU observatory](https://urban-mobility-observatory.transport.ec.europa.eu/news-events/news/helsinki-records-zero-road-deaths-over-past-year-2025-08-22_en)). Wales (20 mph default, 2023): −11.8% casualties in the first year ([Transport for Wales](https://tfw.wales/national-monitoring-report-july-2025)); results still debated | Signs and street design; works best with 1–5 |
 | 7 | **Vehicle design** | Automatic emergency braking that detects pedestrians; lower, sloped front ends | Pedestrian AEB cuts pedestrian crashes by 27%; vehicles with hoods over ~1 m are about 45% more likely to kill a pedestrian ([IIHS](https://www.iihs.org/news/detail/vehicles-with-higher-more-vertical-front-ends-pose-greater-risk-to-pedestrians)). The EU now requires AEB and speed assistance on new cars (to verify: Regulation 2019/2144) | National: import standards and vehicle tax |
 
+## Speed bumps: put them at the crossing, not before it
+
+A bump 50 m before a crosswalk slows cars at the bump; they speed up again by the crossing. A raised crosswalk is the bump *at* the crossing: −45% pedestrian crashes (row 2). Israel already builds many bumps, so the ask is about placement and standard, not new money.
+
+## "One car stopped, the next one didn't" (the multiple-threat crash)
+
+On a road with two lanes in the same direction, the first car stops; the stopped car hides the pedestrian from the driver in the next lane, who often never sees them. It is illegal not to stop, but many of these drivers simply cannot see. Fixes that remove the blind spot:
+
+- **Advance stop line**: a "stop here" line 6–15 m before the crosswalk, so the stopped car does not hide the pedestrian. −25% pedestrian crashes ([FHWA STEP](https://highways.dot.gov/sites/fhwa.dot.gov/files/2022-06/Revised_STEP_Poster_Jan2020_revised_508compliant.pdf); [FHWA guide](https://www.fhwa.dot.gov/publications/research/safety/15043/008.cfm)).
+- **Flashing beacons at the crossing**, pressed by the pedestrian (rectangular rapid-flashing beacon): −47% pedestrian crashes; all nine reviewed studies found drivers yield more ([FHWA toolbox](https://highways.dot.gov/safety/pedestrian-bicyclist/safety-tools/toolbox-pedestrian-countermeasures-and-their-potential)).
+- **One lane per direction at the crossing** (road diet, curb extension or refuge island): no second lane, no second car.
+- **Raised crosswalk**: every lane has to slow down, not only the polite driver.
+
 ## Other ideas that fit Israel (less hard evidence, worth asking about)
 
 - **Longer walk time for older people**: time crossings for a slower walking speed near clinics, synagogues, community centres and elder housing. Fits the 65+ data directly.
