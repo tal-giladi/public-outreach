@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>האם חברי הכנסת עונים?</title>
+<meta name="description" content="מדד ציבורי פתוח: האם חברי הכנסת עונים לפניות הציבור, ומה הם עשו בכנסת הקודמת. נתונים רשמיים, שיטה מפורסמת מראש.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf7;--panel:#fff;--ink:#16181d;--muted:#5d6370;--line:#e4e4de;--accent:#0b6e4f;--accent-soft:#e3f2ec;--warn:#a5521a;--bar:#0b6e4f;--bar-bg:#e9ece8}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111316;--panel:#191c20;--ink:#eceef1;--muted:#9aa1ad;--line:#2b3037;--accent:#4cc79a;--accent-soft:#16352a;--warn:#e39a62;--bar:#4cc79a;--bar-bg:#262b31}}
+:root[data-theme="dark"]{--bg:#111316;--panel:#191c20;--ink:#eceef1;--muted:#9aa1ad;--line:#2b3037;--accent:#4cc79a;--accent-soft:#16352a;--warn:#e39a62;--bar:#4cc79a;--bar-bg:#262b31}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Heebo,system-ui,sans-serif}
+a{color:var(--accent)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header{padding:48px 0 24px}
+h1{font-size:clamp(30px,6vw,52px);line-height:1.1;margin:0 0 12px;font-weight:800;letter-spacing:-.5px}
+.lede{font-size:clamp(17px,2.4vw,20px);color:var(--muted);max-width:720px;margin:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:28px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.stat b{display:block;font-size:34px;font-weight:800;line-height:1.1}
+.stat span{color:var(--muted);font-size:14px}
+.stat.hl{background:var(--accent-soft);border-color:transparent}
+.tabs{display:flex;gap:8px;margin:8px 0 12px;flex-wrap:wrap}
+.tabs button{font:inherit;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:8px 14px;border-radius:999px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.tools input,.tools select{font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);min-width:0;flex:1 1 200px}
+.tablebox{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-size:13px;color:var(--muted);font-weight:500;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--panel)}
+th[data-dir="asc"]::after{content:" ▲"}th[data-dir="desc"]::after{content:" ▼"}
+td.name{font-weight:700}
+td.fac{color:var(--muted);white-space:normal;min-width:160px;font-size:14px}
+td.num{font-variant-numeric:tabular-nums}
+.pending{color:var(--muted);font-size:13px}
+.new{color:var(--warn);font-size:13px}
+.bar{display:inline-block;width:70px;height:6px;background:var(--bar-bg);border-radius:3px;vertical-align:middle;margin-inline-start:8px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--bar)}
+section{margin:40px 0}
+h2{font-size:24px;margin:0 0 8px}
+.note{color:var(--muted);font-size:14px;max-width:760px}
+footer{border-top:1px solid var(--line);padding:24px 0 48px;color:var(--muted);font-size:14px}
+.links{display:flex;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>האם חברי הכנסת עונים לציבור?</h1>
+  <p class="lede">כל סבב אנחנו שולחים לכל 120 חברי הכנסת את אותה שאלה אמיתית על נושא שמטריד את הציבור, ומפרסמים כאן מי ענה. הבדיקה הציבורית האחרונה מסוג זה נעשתה ב-2007.</p>
+</header>
+
+<div class="stats" id="stats"></div>
+
+<div class="tabs" role="tablist">
+  <button role="tab" aria-selected="true" data-tab="mks">חברי הכנסת</button>
+  <button role="tab" aria-selected="false" data-tab="min">משרדי הממשלה</button>
+</div>
+
+<div id="tab-mks">
+  <div class="tools">
+    <input id="q" type="search" placeholder="חיפוש לפי שם" aria-label="חיפוש לפי שם">
+    <select id="fac" aria-label="סינון לפי סיעה"><option value="">כל הסיעות</option></select>
+  </div>
+  <div class="tablebox"><table id="mk"><thead><tr>
+    <th data-k="name">שם</th>
+    <th data-k="faction">סיעה</th>
+    <th data-k="replied">ענו לנו</th>
+    <th data-k="bills">הצעות חוק</th>
+    <th data-k="queries">שאילתות</th>
+    <th data-k="motions">הצעות לסדר</th>
+    <th data-k="vote_pct">השתתפות בהצבעות</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="note" id="mknote"></p>
+</div>
+
+<div id="tab-min" hidden>
+  <div class="tablebox"><table id="min"><thead><tr>
+    <th data-k="name">משרד</th>
+    <th data-k="asked">שאילתות</th>
+    <th data-k="answered">נענו</th>
+    <th data-k="pct">אחוז מענה</th>
+    <th data-k="late">חציון ימי איחור</th>
+  </tr></thead><tbody></tbody></table></div>
+  <p class="note" id="minnote"></p>
+</div>
+
+<section>
+  <h2>איך זה עובד</h2>
+  <p class="note">השיטה פורסמה לפני שנשלח המכתב הראשון: אותו מכתב לכולם, נשלח באותו יום, 30 יום לתשובה, תזכורת אחת ביום 21. תשובה = כל מענה אנושי מהלשכה. לפני פרסום, כל מי שסומן "לא ענה" מקבל הזדמנות לתקן. נתוני הפעילות בכנסת הקודמת הם מהמאגר הרשמי של הכנסת. כמות אינה איכות: שרים אינם מגישים הצעות חוק פרטיות ושאילתות, וחרמות והסכמי קיזוז מורידים את אחוז ההצבעה.</p>
+  <div class="links">
+    <a href="https://github.com/tal-giladi/public-outreach/blob/main/scorecard/METHODOLOGY.md">השיטה המלאה</a>
+    <a href="https://github.com/tal-giladi/public-outreach/tree/main/letters">המכתבים שנשלחו</a>
+    <a href="https://github.com/tal-giladi/public-outreach/blob/main/scorecard/PUBLIC_SOURCES.md">מקורות ציבוריים נוספים</a>
+    <a href="https://github.com/tal-giladi/public-outreach/issues">דיווח על טעות</a>
+  </div>
+</section>
+
+<footer>
+  <div id="gen"></div>
+  <div>קוד ונתונים פתוחים: <a href="https://github.com/tal-giladi/public-outreach">github.com/tal-giladi/public-outreach</a></div>
+</footer>
+</div>
+
+<script>
+(async function(){
+  const res = await fetch('scorecard/data.json', {cache:'no-store'});
+  const data = await res.json();
+  const K = data.prev_knesset;
+  const mks = data.members.map(m => ({...m, replied: m.our_sent ? m.our_replied / m.our_sent : -1}));
+  const sent = mks.reduce((a,m)=>a+m.our_sent,0);
+  const answered = mks.filter(m=>m.our_replied>0).length;
+  const asked = mks.filter(m=>m.our_sent>0).length;
+  const fmt = n => n.toLocaleString('he-IL');
+
+  document.getElementById('stats').innerHTML = [
+    ['hl', asked ? `${answered}/${asked}` : 'בקרוב', asked ? 'חברי כנסת שענו לנו' : 'סבב ראשון: אחרי הקמת הוועדות הקבועות'],
+    ['', fmt(sent), 'מכתבים שנשלחו'],
+    ['', '36/119', 'ענו למייל בבדיקת ynet, 2007'],
+    ['', '120', `חברי הכנסת ה-${data.knesset}`],
+  ].map(([c,b,s])=>`<div class="stat ${c}"><b>${b}</b><span>${s}</span></div>`).join('');
+
+  const facs = [...new Set(mks.map(m=>m.faction))].sort((a,b)=>a.localeCompare(b,'he'));
+  const sel = document.getElementById('fac');
+  facs.forEach(f=>sel.insertAdjacentHTML('beforeend', `<option>${f}</option>`));
+
+  const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const bar = p => p==null ? '—' : `${p}%<span class="bar"><i style="width:${p}%"></i></span>`;
+
+  function mkRow(m){
+    const rep = m.our_sent ? `${m.our_replied}/${m.our_sent}` : '<span class="pending">טרם נשלח</span>';
+    const act = m.prev_member
+      ? `<td class="num">${fmt(m.bills)}</td><td class="num">${fmt(m.queries)}</td><td class="num">${fmt(m.motions)}</td><td class="num">${bar(m.vote_pct)}</td>`
+      : `<td colspan="4" class="new">חבר/ת כנסת חדש/ה, אין נתונים מהכנסת ה-${K}</td>`;
+    const role = m.roles && m.roles.length ? `<div class="pending">${esc(m.roles[0])}</div>` : '';
+    return `<tr><td class="name">${esc(m.name)}${role}</td><td class="fac">${esc(m.faction)}</td><td class="num">${rep}</td>${act}</tr>`;
+  }
+
+  const ministries = Object.entries(data.ministries).map(([name,s])=>{
+    const l=[...s.late_days].sort((a,b)=>a-b);
+    return {name, asked:s.asked, answered:s.answered, pct: s.asked?Math.round(100*s.answered/s.asked):0, late: l.length?l[Math.floor(l.length/2)]:null};
+  }).filter(r=>r.asked>=5);
+  function minRow(r){return `<tr><td class="name">${esc(r.name)}</td><td class="num">${fmt(r.asked)}</td><td class="num">${fmt(r.answered)}</td><td class="num">${bar(r.pct)}</td><td class="num">${r.late==null?'—':fmt(r.late)}</td></tr>`}
+
+  function sortable(tableId, rows, render, filter, defKey){
+    const table = document.getElementById(tableId), tbody = table.querySelector('tbody');
+    let key = defKey, dir = 'asc';
+    const val = (r,k) => { const v = r[k]; if (typeof v === 'string') return v; if (v==null || (tableId==='mk' && !r.prev_member && k!=='replied')) return -Infinity; return v; };
+    function draw(){
+      const list = rows.filter(filter).sort((a,b)=>{
+        const x=val(a,key), y=val(b,key);
+        const c = typeof x==='string' ? x.localeCompare(y,'he') : x-y;
+        return dir==='asc'?c:-c;
+      });
+      tbody.innerHTML = list.map(render).join('');
+      table.querySelectorAll('th').forEach(th=>th.dataset.dir = th.dataset.k===key?dir:'');
+    }
+    table.querySelectorAll('th').forEach(th=>th.addEventListener('click',()=>{
+      if (key===th.dataset.k) dir = dir==='asc'?'desc':'asc'; else {key=th.dataset.k; dir = typeof rows[0][key]==='string'?'asc':'desc';}
+      draw();
+    }));
+    draw(); return draw;
+  }
+
+  const q = document.getElementById('q');
+  const drawMk = sortable('mk', mks, mkRow, m => (!q.value || m.name.includes(q.value.trim())) && (!sel.value || m.faction===sel.value), 'name');
+  q.addEventListener('input', drawMk); sel.addEventListener('change', drawMk);
+  sortable('min', ministries, minRow, ()=>true, 'asked');
+
+  document.getElementById('mknote').textContent = `הצעות חוק, שאילתות, הצעות לסדר והשתתפות בהצבעות: הכנסת ה-${K}, מהמאגר הרשמי של הכנסת. "ענו לנו" יתמלא אחרי הסבב הראשון.`;
+  document.getElementById('minnote').textContent = `שאילתות שהגישו חברי הכנסת ה-${K} לכל משרד, כמה קיבלו תשובה מהשר, ובכמה ימים אחרי המועד הנדרש. משרדים עם פחות מ-5 שאילתות לא מוצגים.`;
+  document.getElementById('gen').textContent = `עודכן: ${data.generated.split('-').reverse().join('.')}`;
+
+  document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected', x===b));
+    document.getElementById('tab-mks').hidden = b.dataset.tab!=='mks';
+    document.getElementById('tab-min').hidden = b.dataset.tab!=='min';
+  }));
+})();
+</script>
+</body>
+</html>
