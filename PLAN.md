@@ -77,14 +77,25 @@ The 26th Knesset was sworn in on 10.11.2026. Permanent committees are not formed
 | Our letters: replies | Our own mailbox | Free | Waiting: new mailbox, letter improvements |
 | Past email-reply tests | ynet 2005, 2007 | — | Documented (`PUBLIC_SOURCES.md`) |
 
+## Site and identity inventory
+
+| Item | What | Cost | Status |
+|---|---|---|---|
+| Website | GitHub Pages, scoreboard as home page: https://tal-giladi.github.io/public-outreach/ | Free | Live |
+| Own domain | Buy a domain, point it at GitHub Pages; hosting and HTTPS stay free. Steps: buy → add a `CNAME` file with the domain to the repo → at the registrar, 4 A records to GitHub's IPs (or a CNAME for `www`) → enable "Enforce HTTPS" in the repo's Pages settings. Hebrew name ideas: `onim.org.il` ("answering"), `mi-ana.org.il` ("who answered"), `ha-im-onim.org.il` — availability not checked | `.org.il` about ₪80–100/year at an Israeli registrar; `.org` about $10–15/year | Tal to choose the name and buy |
+| Sending mailbox | New address in Tal's name (later on the own domain, e.g. `tal@<domain>`, which looks more serious than Gmail) | Free (Gmail) or ~$6/month (Google Workspace on the domain) | Tal creating it |
+| About page ("מי אני") | Who runs the project: name, title, background in tech and AI, why road safety, how to contact. Linked from the home page and from every email signature | Free | Waiting for Tal's bio details |
+| Email signature | Name, title, one line on the project, link to the site | Free | After the about page |
+| Amuta (nonprofit) | So the project is not one person; also unlocks researcher access to Meta/TikTok data | Registration fees | Later |
+
 ## Later, if it works
 
 - Register an amuta (nonprofit) so the project is not one person; the course has a template.
 - Add municipalities (council members) with the same method.
-- A simple public site generated from the Markdown (GitHub Pages).
 
 ## Open decisions for Tal
 
-- Mailbox to send from.
-- Approve the letter.
+- Domain name.
+- Bio for the about page: title, education, current and past roles, why road safety, photo (optional).
+- Main or alternate subject for each of the 12 emails.
 - Whether round 1 also writes to the non-MK ministers.
