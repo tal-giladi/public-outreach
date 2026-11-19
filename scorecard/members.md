@@ -1,6 +1,6 @@
 # Knesset 26 members — public activity scorecard
 
-Generated 2026-11-19. Activity columns cover the Knesset 25 term (official Knesset OData). "Our letters" columns count only letters sent from this project. Method: [METHODOLOGY.md](METHODOLOGY.md).
+Generated 2026-11-19. Activity columns cover the Knesset 25 term (official Knesset OData). "Our letters" columns count only letters sent from this project. Method: [METHODOLOGY.md](METHODOLOGY.md). Attendance hours and committee presence from other trackers: [PUBLIC_SOURCES.md](PUBLIC_SOURCES.md).
 
 | Name | Faction | Bills initiated (K25) | Parliamentary questions (K25) | Agenda motions (K25) | Plenum votes cast | Our letters: sent / replied | Median reply days |
 |---|---|---|---|---|---|---|---|

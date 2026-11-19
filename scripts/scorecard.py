@@ -160,7 +160,8 @@ def main():
 
     lines = [f"# Knesset {kn} members — public activity scorecard", "",
              f"Generated {today}. Activity columns cover the Knesset {prev} term (official Knesset OData). "
-             "\"Our letters\" columns count only letters sent from this project. Method: [METHODOLOGY.md](METHODOLOGY.md).", "",
+             "\"Our letters\" columns count only letters sent from this project. Method: [METHODOLOGY.md](METHODOLOGY.md). "
+             "Attendance hours and committee presence from other trackers: [PUBLIC_SOURCES.md](PUBLIC_SOURCES.md).", "",
              f"| Name | Faction | Bills initiated (K{prev}) | Parliamentary questions (K{prev}) | Agenda motions (K{prev}) | Plenum votes cast | Our letters: sent / replied | Median reply days |",
              "|---|---|---|---|---|---|---|---|"]
     for r in sorted(rows, key=lambda r: r["name"]):

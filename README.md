@@ -10,6 +10,7 @@ Everything here is plain Markdown, generated from official public data or from l
 |---|---|
 | `scorecard/members.md` | Every current MK: legislative activity in the previous Knesset (official data) and how they answered our letters |
 | `scorecard/ministries.md` | How many parliamentary questions each ministry answered, and how late |
+| `scorecard/PUBLIC_SOURCES.md` | What Israel already publishes on MK activity, and the only past email-reply tests (2005, 2007) |
 | `scorecard/METHODOLOGY.md` | Exactly how every number is computed, and its limits |
 | `issues/` | One file per issue: facts, sources, the concrete asks |
 | `letters/` | Every letter sent, exact text, with date / status / reply date in the front matter |
