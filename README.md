@@ -22,6 +22,7 @@ Everything here is plain Markdown, generated from official public data or from l
 | `log.md` | One line per event |
 | `deadlines.md` | Follow-ups and legal deadlines due |
 | `OUTREACH_PLAN.md` | Who we email for each campaign (officials, organisations, citizens), at what scale, and how we stay within the anti-spam law |
+| `ROADMAP.md` | Dated plan for campaign 1: what happens when, and who does it |
 | `PLAN.md` | The plan: rules, timing, round 1 checklist |
 | `OPTIONS.md` | The strategy research behind this project |
 

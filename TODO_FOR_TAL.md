@@ -1,4 +1,5 @@
 # TODO for Tal
+n- ROADMAP.md is the dated plan. Launch: Sunday 3.1.2027. Your tasks are marked "Tal".
 
 - PLAN.md is the plan. Round 1 waits until permanent committees are formed.
 - Road-safety campaign: 12 emails + 3 follow-ups in campaigns/road-safety/. Pick main or alternate subject per email before sending; fill signature (town, phone).
