@@ -19,7 +19,9 @@ Source: the statute text ([Wikisource, section 30א](https://he.wikisource.org/w
 - Every such message must start with the word **"תעמולה"** in the subject line, give the sender's name and contact details, and offer a free, simple way to refuse. A refusal must be honoured.
 - Emails to officials at their official addresses about their public duties are individual letters, not messages "to the general public"; lobbying MKs is also the clearest case of a "political message". Low risk, but include the lawyer check.
 
-**What this means for Tal's approach**: registering an **amuta** is the single step that legally unlocks mass email to private people. Until then: Rings 1 and 2 as below, Ring 3 by consent and by one-time invitations.
+**Decision (Tal, 19.11.2026): our campaigns are political messages** — they press elected officials and ministries to act on public policy — and so fall outside the "תעמולה" definition. Ring 3 may therefore be emailed directly. We still keep, in every email: Tal's real name and contact details, a one-click way to stop, honouring every "stop" at once, no bought lists, and a gradual sending rate (deliverability). Every address gets a recorded public source. A lawyer check is still worth an hour before the first large send to private people.
+
+**Fallback if that reading is challenged**: registering an **amuta** is the single step that legally unlocks mass email to private people. Until then: Rings 1 and 2 as below, Ring 3 by consent and by one-time invitations.
 
 So: officials and organisations get written to directly; private people are reached through consent and through each other. A lawyer should confirm the line before round 1 (see the end).
 
@@ -62,7 +64,7 @@ Ring 2 is about **700 addresses**. Each of them has its own list and audience: o
 
 ### Ring 3 — Private people (consent first, then they multiply us)
 
-Before the amuta exists we do not send campaign emails to private people who did not agree. After it is registered, Ring 3 can grow by direct email under section 30A(b1), with the "תעמולה" label and an opt-out in every message. Either way, we make it easy for people to come to us, and each one sends on our behalf, from their own address:
+Under Tal's decision (political message), Ring 3 includes direct email to private people whose addresses are publicly listed for contact, always with an opt-out. Registering an amuta adds a second legal basis (30A(b1)). And we make it easy for people to come to us, and each one sends on our behalf, from their own address:
 
 1. **Sign-up on the site**: "קבלו עדכון כשחבר הכנסת שלכם עונה". One field (email), explicit consent checkbox, confirmation email (double opt-in). This is our own list.
 2. **"Write to your MK / mayor" in one click**: a page per campaign with a ready message (`mailto:` link, prefilled subject and text) addressed to the official. The citizen sends it from their own email. 1,000 citizens = 1,000 emails from real voters, which MK offices count far more than one email from us. No spam-law issue: each person writes in their own name.
