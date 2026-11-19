@@ -4,8 +4,22 @@ Tal's approach, 19.11.2026: no budget, no organisation behind us. The one thing 
 
 The plan below maximises reach **without** getting the project shut down. Two things can kill it overnight:
 
-1. **The anti-spam law** (Communications Law, section 30A): a message sent "to the public" as **propaganda (תעמולה) or a donation request** counts as advertising and needs the recipient's **prior consent**. Each unsolicited message can cost up to **₪1,000** in a lawsuit, with no need to prove damage ([Kol Zchut](https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99_%D7%91%D7%92%D7%99%D7%9F_%D7%9E%D7%A9%D7%9C%D7%95%D7%97_%D7%93%D7%91%D7%A8%D7%99_%D7%A4%D7%A8%D7%A1%D7%95%D7%9E%D7%AA_%D7%9C%D7%9C%D7%90_%D7%94%D7%A1%D7%9B%D7%9E%D7%94_%D7%A9%D7%9C_%D7%94%D7%A0%D7%9E%D7%A2%D7%9F_(%D7%97%D7%95%D7%A7_%D7%94%D7%A1%D7%A4%D7%90%D7%9D))). 5,000 cold emails to private people = a theoretical ₪5 million exposure.
+1. **The anti-spam law** (Communications Law, section 30A, see the next section). Each message sent in breach can cost up to **₪1,000** in a lawsuit, with no need to prove damage. 5,000 cold emails to private people = a theoretical ₪5 million exposure.
 2. **Deliverability**: a new address sending thousands of unsolicited emails gets flagged as spam within days, and then even the MKs stop receiving us.
+
+## What the law actually says (section 30A, read 19.11.2026)
+
+Source: the statute text ([Wikisource, section 30א](https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%94%D7%AA%D7%A7%D7%A9%D7%95%D7%A8%D7%AA_(%D7%91%D7%96%D7%A7_%D7%95%D7%A9%D7%99%D7%93%D7%95%D7%A8%D7%99%D7%9D)); verify against the official Knesset text). Not legal advice.
+
+- "Advertising" (דבר פרסומת) has three forms: (1) a **commercial** message; (2) a message sent **to the general public** asking for a **donation or as propaganda (תעמולה)**; (3) a public message inviting people to call a phone number.
+- We ask for no money and sell nothing, so (1) does not apply. **But (2) can**: the law defines תעמולה as "spreading ideas to influence attitudes or behaviour", which describes a campaign. It excludes a message with a **"political message"**, a term the law does not define. Whether a road-safety campaign counts as "political" is exactly the question for a lawyer.
+- Consent needed for (2): prior, explicit, written (an email or a checkbox counts) — for email, SMS, fax and auto-dial.
+- **Exception 1 — one-time invitation**: a single email to anyone, for propaganda, that only **asks them to agree** to receive our messages, is allowed.
+- **Exception 2 — registered nonprofits (סעיף 30א(ב1))**: an **amuta (עמותה) or public-benefit company (חל"צ)** may send propaganda or donation emails **without prior consent**, as long as the recipient has not refused. Email only, not SMS.
+- Every such message must start with the word **"תעמולה"** in the subject line, give the sender's name and contact details, and offer a free, simple way to refuse. A refusal must be honoured.
+- Emails to officials at their official addresses about their public duties are individual letters, not messages "to the general public"; lobbying MKs is also the clearest case of a "political message". Low risk, but include the lawyer check.
+
+**What this means for Tal's approach**: registering an **amuta** is the single step that legally unlocks mass email to private people. Until then: Rings 1 and 2 as below, Ring 3 by consent and by one-time invitations.
 
 So: officials and organisations get written to directly; private people are reached through consent and through each other. A lawyer should confirm the line before round 1 (see the end).
 
@@ -48,7 +62,7 @@ Ring 2 is about **700 addresses**. Each of them has its own list and audience: o
 
 ### Ring 3 — Private people (consent first, then they multiply us)
 
-We do **not** cold-email private people. We make it easy for them to come to us, and then each one sends on our behalf, from their own address:
+Before the amuta exists we do not send campaign emails to private people who did not agree. After it is registered, Ring 3 can grow by direct email under section 30A(b1), with the "תעמולה" label and an opt-out in every message. Either way, we make it easy for people to come to us, and each one sends on our behalf, from their own address:
 
 1. **Sign-up on the site**: "קבלו עדכון כשחבר הכנסת שלכם עונה". One field (email), explicit consent checkbox, confirmation email (double opt-in). This is our own list.
 2. **"Write to your MK / mayor" in one click**: a page per campaign with a ready message (`mailto:` link, prefilled subject and text) addressed to the official. The citizen sends it from their own email. 1,000 citizens = 1,000 emails from real voters, which MK offices count far more than one email from us. No spam-law issue: each person writes in their own name.
@@ -92,6 +106,7 @@ Rules: our own domain with SPF, DKIM and DMARC set up before the first big send;
 
 ## Open decisions for Tal
 
+- Register an amuta: unlocks legal mass email to private people (30A(b1)), researcher data access, and partnerships. The activist-law course has an amuta bylaws checklist (`templates/amuta-bylaws-checklist.md`).
 - Lawyer check (an hour with someone who knows section 30A): confirm Ring 1 and Ring 2 are fine as designed, and the exact wording for the sign-up consent. The activist-law course already covers the law; a pro-bono lawyer from a partner organisation is the cheapest route.
 - Which email service for the consented list.
 - Which cities first for council members (suggestion: the 10 cities with the most pedestrian deaths, from the Road Safety Authority data).

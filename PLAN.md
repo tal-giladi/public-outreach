@@ -2,6 +2,8 @@
 
 Reviewed 19.11.2026. Replaces the action list in OPTIONS.md (that file stays as the background research).
 
+Outreach (who we email, how many, and how we stay legal): see [OUTREACH_PLAN.md](OUTREACH_PLAN.md).
+
 ## What we are
 
 The first public, repeated, documented measurement of whether Israeli MKs answer the public. The last one was ynet in 2007 (36 of 119 answered). Every round asks every MK one real question on a non-partisan public issue, publishes the letter, and publishes who answered.
