@@ -8,3 +8,4 @@
 - The repo is public: your name is on the letter, and the scorecard names every MK. Replies go in replies/, which is not pushed.
 - Reply-rate columns stay at 0 until the first letters are sent; measure after 30 days.
 - Knesset Time (zmanknesset.co.il) has per-MK building hours and committee attendance, but pulling it automatically was blocked here; ask them for an export, or I compute committee attendance from the official protocols.
+- About page (about.html, not published): needs a public contact email once the new mailbox exists; a real photo of you is optional.
