@@ -14,6 +14,17 @@ Research, 19.11.2026. Goal: does each MK talk *with* the public (answers, replie
 | **Knesset (official)** | Yes, open data (already used) | Free | Plenum speeches, committee participation, parliamentary questions, motions | Already on the scoreboard; add committee attendance from protocols |
 | **Blocking and deleted comments** | Reported: MKs must report to the Ethics Committee every user they block or comment they delete ([Israel Hayom](https://www.israelhayom.co.il/tech/tech-news/article/18511298)) | Free if published; otherwise an FOI request to the Knesset | How many citizens each MK blocked | Strong "listening to the public" signal. Check whether the reports are public; if not, request them |
 
+## Free official sources (no social media needed)
+
+| Source | What it gives per MK | Status |
+|---|---|---|
+| **Committee protocols** (Knesset open data, 10,855 sessions in the 25th Knesset, Word files) | Tested on one protocol: each lists "נכחו" — committee members and other MKs present — plus every invited guest (public, NGOs, ministry officials) and every speaker. Gives: committee attendance, how often each MK speaks, and how often sessions they initiate bring in the public | Not built. About 1.5 GB to download, parse in the background over a few hours |
+| **Plenum protocols** ("דברי הכנסת", Word files) | Speeches per MK | Not built; same parser |
+| **Urgent-debate motions** (הצעה לדיון מהיר) | Which MK pushed a public issue onto a committee agenda; visible in protocol agendas and in `KNS_Agenda` | Partly in the scoreboard (agenda motions) |
+| **Ministers' diaries** | Who each minister met, including the public. Published ministry by ministry on gov.il and on the central FOI site foi.gov.il, often after FOI requests, quarterly ([example](https://www.gov.il/BlobFolder/dynamiccollectorresultitem/clnsp_62/he/repository-of-answers_culture-and-sport_jjj2.pdf)). Meetings held "as an MK" are excluded by law | Can be collected per ministry; for missing ones, file FOI requests (template in the course) |
+| **Lobbyists register** (`V_Lobbyist`, Knesset open data) | Which lobbyists and clients operate in the Knesset | About lobbyists, not MKs; context only |
+| **Ethics Committee decisions** (Knesset site) | Complaints against MKs and rulings | Public; can be listed per MK |
+
 ## Accounts
 
 [contacts/social-accounts.md](../contacts/social-accounts.md): 67 of 120 MKs have at least one account in Wikidata (X 49, Facebook 62, Instagram 36, Telegram 15, YouTube 17, TikTok 17 among the 87 matched). The other 53 (mostly new MKs) need a one-time manual lookup from their Knesset page.
